@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>简历</title>
+    <style>
+        #app{
+            width:50%;
+            margin:auto;
+            background:whitesmoke;
+        }
+        .center{
+            text-align: center;
+            margin: auto;
+        };
+        .item-back>span{
+            height: 2rem;
+            width: 6rem;
+            line-height: 2rem;
+            display: inline-block;
+            border-radius: 16px;
+            background: #cccccc;
+        }
+        .item-back>label{
+            display: inline-block;
+            border-bottom: 1px solid #ccc;
+            width: 243px;
+            height: 2px;
+            margin-bottom: 5px;
+        }
+        .box{
+            text-align: left;
+            padding: 0 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 个人简介 -->
+        <el-container id="info" class="center">
+            <el-header style="position:relative;background-image:  url('../static/imgs/1.jpg');    background-repeat: no-repeat;height:100px;
+            background-size: cover;">
+                <div id="avatar" style=" position: absolute;
+                left: 0;
+                right: 0;
+                top: 45px;">
+                    <span style="background-image: url('../static/imgs/2.jpg');  display:inline-block;background-size: cover;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50% 50%;border:4px solid white;"></span>
+                </div>
+            </el-header>
+            <el-main>
+                <p>田新兴</p>
+                <p>一句正能量</p>
+                <p>java程序员 - 中国电子科技集团第二十八研究所</p>
+                <p>男 25岁 本科 2年工作经验 南京</p>
+                <p>18351801500   1729549607@qq.com</p>
+                <div>
+                    <span>github:</span>
+                    <a href="https://github.com/tianxx7" target="_blank">https://github.com/tianxx7</a>
+                </div>
+            </el-main>
+        </el-container>
+        <!-- 工作经历 -->
+        <el-container id="work-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>工作经历</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">中国电子科技集团第二十八研究所</span>
+                        <span style="float:right;font-weight: 100">2017.08-至今</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>负责相关项目开发</span>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+        <!-- 教育经历 -->
+        <el-container id="edu-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>教育经历</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">南京信息工程大学</span>
+                        <span style="float:right;font-weight: 100">2017年毕业</span>
+                    </div>
+                    <div style="color:#919090;">本科-测控技术与仪器</div>
+                </div>                  
+            </el-main>
+        </el-container>
+        <!-- 项目经验 -->
+        <el-container id="project-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>项目经验</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">版本管理系统</span>
+                        <span style="float:right;font-weight: 100">2019.06-至今</span>
+                    </div>
+                    <div style="color:#919090;font-size: smaller;">java程序员</div>
+                    <div style="margin-top:7px;">
+                        <span>全程参与开发,管理客户端应用版本,对客户端提供RESTful接口,用于版本更新检查.</span>
+                        <div>
+                            <p>个人职责:</p>
+                            <ol>
+                                <li>项目搭建</li>
+                                <li>文件下载nio接口</li>
+                                <li>前端登陆,管理界面开发</li>
+                            </ol>
+                        </div>
+                        <ul style="padding:0 18px;">
+                            <li>框架:Spring MVC,Spring Security,Spring,Mybatis,Vue,Element-UI</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">xx原型系统</span>
+                        <span style="float:right;font-weight: 100">2018.12-2019.05</span>
+                    </div>
+                    <div style="color:#919090;font-size: smaller;">java程序员</div>
+                    <div style="margin-top:7px;">
+                        <span>原型系统,负责对第三方webgis接口进行封装,对其他业务系统提供接口调用,以及本业务的展现使用</span>
+                        <div>
+                            <p>个人职责:</p>
+                            <ol>
+                                <li>与第三方工程师对接,封装webgis API接口</li>
+                                <li>使用Solr地理信息检索的功能,对地图的框选等范围操作进行全文检索</li>
+                                <li>开发MyBatis插件,Spring AOP两种方式对业务数据库和Solr索引库进行同步功能</li>
+                                <li>使用多线程对第三方提供的最短路径接口进行某区域两地间最短路线实际距离的计算</li>
+                                <li>某点是否在前端地图上划定范围的判断算法</li>
+                            </ol>
+                        </div>
+                        <ul style="padding:0 18px;">
+                            <li>框架:Spring MVC,Shiro,Spring,Mybatis,UIkit</li>
+                            <li>数据库:南大通用</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">webgis系统</span>
+                        <span style="float:right;font-weight: 100">2018.6-2018.12</span>
+                    </div>
+                    <div style="color:#919090;font-size: smaller;">java程序员</div>
+                    <div style="margin-top:7px;">
+                        <span>全程参与开发,地理资源批量录入与基本CRUD操作,数据采集工作流,使用webgis展现各个地理资源,并进行相关操作.</span>
+                        <div>
+                            <p>个人职责:</p>
+                            <ol>
+                                <li>负责数据批量上传,以及CRUD操作的前端与后端的开发</li>
+                                <li>使用第三方提供的webgis API对地理资源进行操作</li>
+                                <li>Solr全文检索信息</li>
+                                <li>与webgis结合,使用Solr进行空间检索</li>
+                            </ol>
+                        </div>
+                        <ul style="padding:0 18px;">
+                            <li>框架:Struts2,Spring,Hibernate,Activiti,Extjs</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">数据管理项目</span>
+                        <span style="float:right;font-weight: 100">2017.9-1017.12</span>
+                    </div>
+                    <div style="color:#919090;font-size: smaller;">java程序员</div>
+                    <div style="margin-top:7px;">
+                        <span>中间参与开发,作为数据管理平台,管理各个业务的基本数据,提供对各项业务的CRUD,以及批量数据导入,导出.</span>
+                        <div>
+                            <p>个人职责:</p>
+                            <ol>
+                                <li>学习并使用Extjs,进行前端页面开发</li>
+                            </ol>
+                        </div>
+                        <ul style="padding:0 18px;">
+                            <li>框架:Struts2,Spring,Hibernate,Extjs</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+        <!-- 自我描述 -->
+        <el-container id="self" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>自我描述</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="text-align: left;padding:0 60px;">
+                <ul>
+                    <li>老板评价:</li>
+                    <li>同事评价:</li>
+                    <li>自我评价:</li>
+                </ul>
+            </el-main>
+        </el-container>
+        <!-- 期望工作 -->
+        <el-container id="help-work" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>期望工作</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="padding:0 60px;">
+                <el-row :gutter="20">
+                    <el-col :span="6"><div class="grid-content bg-purple">
+                        <i class="el-icon-s-custom"></i><span style="margin-left: 4px;">java程序员</span>
+                    </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-time"></i><span style="margin-left: 4px;">全职</span>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-map-location"></i><span style="margin-left: 4px;">南京</span>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-s-custom"></i><span style="margin-left: 4px;">11k-</span>
+                </div></el-col>
+                </el-row>
+            </el-main>
+        </el-container>
+        <!-- 技能评价 -->
+        <el-container id="skill" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>技能评价</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="padding:0 60px;text-align: left;">
+                <ol>
+                    <li>熟悉Java语言,Java集合框架,juc并发包</li>
+                    <li>熟悉spring框架,ioc,aop</li>
+                    <li>熟悉MyBatis框架</li>
+                    <li>了解数据结构与算法</li>
+                    <li>熟悉javascript</li>
+                    <li>设计模式:单例模式,装饰者模式,生产者-消费者模式,反射,代理模式</li>
+                </ol>
+            </el-main>
+        </el-container>
+        <!-- 技术研究 -->
+        <el-container id="technology" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>技术研究</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="text-align: left; padding:0 60px;">
+                <div>
+                    <h4>JVM</h4>
+                    <ul>
+                        <li>熟悉类加载过程</li>
+                        <li>了解GC算法</li>
+                        <li>了解JMM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Mybatis源码</h4>
+                    <ul>
+                        <li>看过徐郡明的《MyBatis技术内幕》,对MyBatis源码有一定了解</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Spring源码</h4>
+                    <ul>
+                        <li>看过一部分郝佳的《Spring 源码深度解析》,对spring源码有一定了解</li>
+                        <li>仿写过SpringMVC</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>spring boot</h4>
+                    <ul>
+                        <li>学习了汪云飞的Spring Boot实战,并进行了实践,源码地址:</li>
+                        <a href="https://github.com/tianxx7/spring_boot_action" target="_blank">https://github.com/tianxx7/spring_boot_action</a>
+                    </ul>
+                </div>
+                <div>
+                    <h4>docker</h4>
+                    <ul>
+                        <li>docker基本使用,使用docker做过项目镜像,并部署在阿里云上,访问地址:</li>
+                        <a href="http://nginx.xijiede.top" target="_blank">http://nginx.xijiede.top</a>
+                    </ul>
+                </div>
+                <div>
+                    <span>自学了python基础,看过Martin Fowler的重构,阿里的码出高效等</span>
+                </div>
+            </el-main>
+            <el-footer>结束语,怎么写</el-footer>
+        </el-container>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</html>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+        },
+        methods:{}
+    })
+</script>

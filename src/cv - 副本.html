@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+    <title>简历</title>
+    <style>
+        #app{
+            width:50%;
+            margin:auto;
+            background:whitesmoke;
+        }
+        .center{
+            text-align: center;
+            margin: auto;
+        };
+        .avatar_background{
+            background-image: url(../static/imgs/ef6058b6db703eca4bc2f4ebdb6a80a4.jpg)
+        }
+        #avatar>span{
+            display:inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50% 50%;
+        }
+        .item-back{
+
+        }
+        .item-back>span{
+            height: 2rem;
+            width: 6rem;
+            line-height: 2rem;
+            display: inline-block;
+            border-radius: 16px;
+            background: #cccccc;
+        }
+        .item-back>label{
+            display: inline-block;
+            border-bottom: 1px solid #ccc;
+            width: 243px;
+            height: 2px;
+            margin-bottom: 5px;
+        }
+        .box{
+            text-align: left;
+            padding: 0 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 个人简介 -->
+        <el-container id="info" class="center">
+            <el-header>
+                <div class="avatar_background" style="background-image: url('../static/imgs/ef6058b6db703eca4bc2f4ebdb6a80a4.jpg')"></div>
+                <div id="avatar">
+                    <span style="background-image: url('../static/imgs/pic.jpg')"></span>
+                </div>
+            </el-header>
+            <el-main>
+                <p>田新兴</p>
+                <p>一句正能量</p>
+                <p>java程序员 - 中国电子科技集团第二十八研究所</p>
+                <p>男 25岁 本科 2年工作经验 南京</p>
+                <p>18351801500   1729549607@qq.com</p>
+            </el-main>
+        </el-container>
+        <!-- 工作经历 -->
+        <el-container id="work-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>工作经历</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">中国电子科技集团第二十八研究所</span>
+                        <span style="float:right;font-weight: 100">2017.08-至今</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>负责相关项目开发</span>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+        <!-- 教育经历 -->
+        <el-container id="edu-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>教育经历</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">南京信息工程大学</span>
+                        <span style="float:right;font-weight: 100">2017年毕业</span>
+                    </div>
+                    <div style="color:#919090;">本科-测控技术与仪器</div>
+                </div>                  
+            </el-main>
+        </el-container>
+        <!-- 项目经验 -->
+        <el-container id="project-record" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>项目经验</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">版本管理系统</span>
+                        <span style="float:right;font-weight: 100">2019.06-至今</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>全程参与开发,管理客户端应用版本,对客户端提供RESTful接口,用于版本更新检查.</span>
+                        <ul>
+                            <li>框架:Spring MVC,Spring Security,Spring,Mybatis,Vue,Element-UI</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">xx原型系统</span>
+                        <span style="float:right;font-weight: 100">2018.12-2019.05</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>原型系统,负责对第三方webgis接口进行封装,对其他业务系统提供接口调用,以及本业务的展现使用</span>
+                        <ul>
+                            <li>框架:Spring MVC,Shiro,Spring,Mybatis,UIkit</li>
+                            <li>数据库:南大通用</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">webgis系统</span>
+                        <span style="float:right;font-weight: 100">2018.6-2018.12</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>全程参与开发,地理资源批量录入与基本CRUD操作,数据采集工作流,使用webgis展现各个地理资源,并进行相关操作.</span>
+                        <ul>
+                            <li>框架:Struts2,Spring,Hibernate,Activiti,Extjs</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box" style="line-height: 1.5">
+                    <div>
+                        <span style="font-weight: 600;font-size:18px;">数据管理项目</span>
+                        <span style="float:right;font-weight: 100">2017.9-1017.12</span>
+                    </div>
+                    <div style="color:#919090;">java程序员</div>
+                    <div>
+                        <span>中间参与开发,作为数据管理平台,管理各个业务的基本数据,提供对各项业务的CRUD,以及批量数据导入,导出.</span>
+                        <ul>
+                            <li>框架:Struts2,Spring,Hibernate,Extjs</li>
+                            <li>数据库:Oracle</li>
+                            <li>语言:java,javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+        <!-- 自我描述 -->
+        <el-container id="self" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>自我描述</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="text-align: left;padding:0 60px;">
+                <ul>
+                    <li>老板评价:</li>
+                    <li>同事评价:</li>
+                    <li>自我评价:</li>
+                </ul>
+            </el-main>
+        </el-container>
+        <!-- 期望工作 -->
+        <el-container id="help-work" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>期望工作</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="padding:0 60px;">
+                <el-row :gutter="20">
+                    <el-col :span="6"><div class="grid-content bg-purple">
+                        <i class="el-icon-s-custom"></i><span style="margin-left: 4px;">java程序员</span>
+                    </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-time"></i><span style="margin-left: 4px;">全职</span>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-map-location"></i><span style="margin-left: 4px;">南京</span>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <i class="el-icon-s-custom"></i><span style="margin-left: 4px;">11k-</span>
+                </div></el-col>
+                </el-row>
+            </el-main>
+        </el-container>
+        <!-- 技能评价 -->
+        <el-container id="skill" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>技能评价</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="padding:0 60px;">
+                <el-row :gutter="15">
+                    <el-col :span="4"><div class="grid-content bg-purple">
+                        java 
+                    </div></el-col>
+                    <el-col :span="20"><div class="grid-content bg-purple">
+                        <el-progress :percentage="60" :format="format" show-text="false"></el-progress>
+                    </div></el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="4"><div class="grid-content bg-purple">
+                        html+js+css
+                    </div></el-col>
+                    <el-col :span="20"><div class="grid-content bg-purple">
+                        <el-progress :percentage="60" :format="format" show-text="false"></el-progress>
+                    </div></el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="4"><div class="grid-content bg-purple">
+                        Linux
+                    </div></el-col>
+                    <el-col :span="20"><div class="grid-content bg-purple">
+                        <el-progress :percentage="60" :format="format" show-text="false"></el-progress>
+                    </div></el-col>
+                </el-row>
+            </el-main>
+        </el-container>
+        <!-- 技术研究 -->
+        <el-container id="technology" class="center">
+            <el-header>
+                <p class="item-back">
+                    <label></label>
+                    <span>技术研究</span>
+                    <label></label>
+                </p>
+            </el-header>
+            <el-main style="text-align: left; padding:0 60px;">
+                
+            </el-main>
+        </el-container>
+
+        <!-- git 博客 -->
+        <el-container id="technology" class="center">
+                <el-header>
+                    <p class="item-back">
+                        <label></label>
+                        <span>技术研究</span>
+                        <label></label>
+                    </p>
+                </el-header>
+                <el-main style="text-align: left; padding:0 60px;">
+                    
+                </el-main>
+            </el-container>
+    </div>
+</body>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/element-ui/lib/index.js"></script>
+</html>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            circleUrl:"../static/imgs/pic.jpg"
+        },
+        methods:{}
+    })
+</script>
