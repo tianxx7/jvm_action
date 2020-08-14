@@ -1,28 +1,106 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>Java虚拟机</title>
-	<meta charset="UTF-8">
+    <title>计算机知识</title>
+    <meta charset="UTF-8">
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <style>
-        a{
-            display: block;
+        .el-link.el-link--primary {
+            font-size: 3rem;
         }
     </style>
-</head>
-<body>
 
-<a href="./jvm.html">深入拆解jvm-郑</a>
-<a href="./Linux操作系统.html">趣谈Linux系统</a>
-<a href="./编译原理.html">编译原理</a>
-<a href="./计算机组成原理.html">计算机组成原理</a>
-<a href="./计算机网络.html">计算机网络</a>
-<a href="./软件工程.html">软件工程</a>
-<a href="./后端技术基础.html">后端技术基础</a>
-<a href="./高并发系统设计.html">高并发系统设计</a>
-<a href="./消息队列.html">消息队列</a>
-<a href="./python实践.html">python实践</a>
-<a href="./tomcat.html">tomcat</a>
-<a href="./k8s.html">k8s</a>
-<a href="./rpc.html">rpc</a>
+</head>
+
+<body>
+    <div id="app">
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./计算机组成原理.html" target="_blank">计算机组成原理</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./编译原理.html" target="_blank">编译原理</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./Linux操作系统.html" target="_blank">趣谈Linux系统</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./计算机网络.html" target="_blank">计算机网络</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./软件工程.html" target="_blank">软件工程</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./后端技术基础.html" target="_blank">后端技术基础</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./jvm.html" target="_blank">深入拆解jvm</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./消息队列.html" target="_blank">消息队列</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./mysql.html" target="_blank">mysql</el-link>
+            </el-col>
+        </el-row>
+
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./tomcat.html" target="_blank">tomcat</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./rpc.html" target="_blank">rpc</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./高并发系统设计.html" target="_blank">高并发系统设计</el-link>
+            </el-col>
+        </el-row>
+
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./k8s.html" target="_blank">k8s</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./python实践.html" target="_blank">python实践</el-link>
+            </el-col>
+        </el-row>
+    </div>
 </body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+        }
+    })
+</script>
+
 </html>
