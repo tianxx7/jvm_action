@@ -1,60 +1,311 @@
 <!doctype html>
 <html>
+
 <head>
     <title>python基础</title>
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <style>
-        a{
-            display: block;
+        .el-link.el-link--primary {
+            font-size: 3rem;
         }
     </style>
 </head>
+
 <body>
-<a href="./32-Python核心技术与实战（完结）/01-开篇词 (1讲)/00丨开篇词丨从工程的角度深入理解Python.html">00丨开篇词丨从工程的角度深入理解Python</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/01丨如何逐步突破，成为Python高手？.html">01丨如何逐步突破，成为Python高手？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/02丨Jupyter Notebook为什么是现代Python的必学技术？.html">02丨Jupyter Notebook为什么是现代Python的必学技术？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/03丨列表和元组，到底用哪一个？.html">03丨列表和元组，到底用哪一个？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/04丨字典、集合，你真的了解吗？.html">04丨字典、集合，你真的了解吗？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/05丨深入浅出字符串.html">05丨深入浅出字符串</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/06丨Python “黑箱”：输入与输出.html">06丨Python “黑箱”：输入与输出</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/07丨修炼基本功：条件与循环.html">07丨修炼基本功：条件与循环</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/08丨异常处理：如何提高程序的稳定性？.html">08丨异常处理：如何提高程序的稳定性？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/09丨不可或缺的自定义函数.html">09丨不可或缺的自定义函数</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/10丨简约不简单的匿名函数.html">10丨简约不简单的匿名函数</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/11丨面向对象（上）：从生活中的类比说起.html">11丨面向对象（上）：从生活中的类比说起</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/12丨面向对象（下）：如何实现一个搜索引擎？.html">12丨面向对象（下）：如何实现一个搜索引擎？</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/13丨搭建积木：Python 模块化.html">13丨搭建积木：Python 模块化</a>
-<a href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/14丨答疑（一）：列表和元组的内部实现是怎样的？.html">14丨答疑（一）：列表和元组的内部实现是怎样的？</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/15丨Python对象的比较、拷贝.html">15丨Python对象的比较、拷贝</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/16丨值传递，引用传递or其他，Python里参数是如何传递的.html">16丨值传递，引用传递or其他，Python里参数是如何传递的</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/17丨强大的装饰器.html">17丨强大的装饰器</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/18丨[名师分享] metaclass，是潘多拉魔盒还是阿拉丁神灯？.html">18丨[名师分享] metaclass，是潘多拉魔盒还是阿拉丁神灯？</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/19丨深入理解迭代器和生成器.html">19丨深入理解迭代器和生成器</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/20丨揭秘 Python 协程.html">20丨揭秘 Python 协程</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/21丨Python并发编程之Futures.html">21丨Python并发编程之Futures</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/22丨并发编程之Asyncio.html">22丨并发编程之Asyncio</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/23丨你真的懂Python GIL（全局解释器锁）吗？.html">23丨你真的懂Python GIL（全局解释器锁）吗？</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/24丨带你解析 Python 垃圾回收机制.html">24丨带你解析 Python 垃圾回收机制</a>
-<a href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/25丨答疑（二）：GIL与多线程是什么关系呢？.html">25丨答疑（二）：GIL与多线程是什么关系呢？</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/26丨[名师分享] 活都来不及干了，还有空注意代码风格？！.html">26丨[名师分享] 活都来不及干了，还有空注意代码风格？！</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/27丨学会合理分解代码，提高代码可读性.html">27丨学会合理分解代码，提高代码可读性</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/28丨如何合理利用assert？.html">28丨如何合理利用assert？</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/29丨巧用上下文管理器和With语句精简代码.html">29丨巧用上下文管理器和With语句精简代码</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/30丨真的有必要写单元测试吗？.html">30丨真的有必要写单元测试吗？</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/31丨pdb&cProfile：调试和性能分析的法宝.html">31丨pdb&cProfile：调试和性能分析的法宝</a>
-<a href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/32丨答疑（三）：如何选择合适的异常处理方式？.html">32丨答疑（三）：如何选择合适的异常处理方式？</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/33丨带你初探量化世界.html">33丨带你初探量化世界</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/34丨RESTful&Socket搭建交易执行层核心.html">34丨RESTful&Socket搭建交易执行层核心</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/35丨RESTful&Socket行情数据对接和抓取.html">35丨RESTful&Socket行情数据对接和抓取</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/36 丨 Pandas & Numpy 策略与回测系统.html">36 丨 Pandas & Numpy 策略与回测系统</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/37 丨 Kafka & ZMQ：自动化交易流水线.html">37 丨 Kafka & ZMQ：自动化交易流水线</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/38 丨 MySQL：日志和数据存储系统.html">38 丨 MySQL：日志和数据存储系统</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/39丨Django：搭建监控平台.html">39丨Django：搭建监控平台</a>
-<a href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/40丨总结：Python中的数据结构与算法全景.html">40丨总结：Python中的数据结构与算法全景</a>
-<a href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/41丨硅谷一线互联网公司的工作体验.html">41丨硅谷一线互联网公司的工作体验</a>
-<a href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/42丨细数技术研发的注意事项.html">42丨细数技术研发的注意事项</a>
-<a href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/43丨Q&A：聊一聊职业发展和选择.html">43丨Q&A：聊一聊职业发展和选择</a>
-<a href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/加餐丨带你上手SWIG：一份清晰好用的SWIG编程实践指南.html">加餐丨带你上手SWIG：一份清晰好用的SWIG编程实践指南</a>
-<a href="./32-Python核心技术与实战（完结）/07-结束语/结束语丨技术之外的几点成长建议.html">结束语丨技术之外的几点成长建议</a>
+    <div id="app">
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/01-开篇词 (1讲)/00丨开篇词丨从工程的角度深入理解Python.html"
+                    target="_blank">00丨开篇词丨从工程的角度深入理解Python</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/01丨如何逐步突破，成为Python高手？.html"
+                    target="_blank">01丨如何逐步突破，成为Python高手？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary"
+                    href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/02丨Jupyter Notebook为什么是现代Python的必学技术？.html"
+                    target="_blank">02丨Jupyter Notebook为什么是现代Python的必学技术？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/03丨列表和元组，到底用哪一个？.html"
+                    target="_blank">03丨列表和元组，到底用哪一个？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/04丨字典、集合，你真的了解吗？.html"
+                    target="_blank">04丨字典、集合，你真的了解吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/05丨深入浅出字符串.html" target="_blank">
+                    05丨深入浅出字符串</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/06丨Python “黑箱”：输入与输出.html"
+                    target="_blank">06丨Python “黑箱”：输入与输出</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/07丨修炼基本功：条件与循环.html" target="_blank">
+                    07丨修炼基本功：条件与循环</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/08丨异常处理：如何提高程序的稳定性？.html"
+                    target="_blank">08丨异常处理：如何提高程序的稳定性？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/09丨不可或缺的自定义函数.html" target="_blank">
+                    09丨不可或缺的自定义函数</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/10丨简约不简单的匿名函数.html" target="_blank">
+                    10丨简约不简单的匿名函数</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/11丨面向对象（上）：从生活中的类比说起.html"
+                    target="_blank">11丨面向对象（上）：从生活中的类比说起</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/12丨面向对象（下）：如何实现一个搜索引擎？.html"
+                    target="_blank">12丨面向对象（下）：如何实现一个搜索引擎？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/13丨搭建积木：Python 模块化.html"
+                    target="_blank">13丨搭建积木：Python 模块化</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/02-基础篇 (14讲)/14丨答疑（一）：列表和元组的内部实现是怎样的？.html"
+                    target="_blank">14丨答疑（一）：列表和元组的内部实现是怎样的？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/15丨Python对象的比较、拷贝.html"
+                    target="_blank">15丨Python对象的比较、拷贝</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/16丨值传递，引用传递or其他，Python里参数是如何传递的.html"
+                    target="_blank">16丨值传递，引用传递or其他，Python里参数是如何传递的</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/17丨强大的装饰器.html" target="_blank">
+                    17丨强大的装饰器</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary"
+                    href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/18丨[名师分享] metaclass，是潘多拉魔盒还是阿拉丁神灯？.html" target="_blank">
+                    18丨[名师分享] metaclass，是潘多拉魔盒还是阿拉丁神灯？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/19丨深入理解迭代器和生成器.html" target="_blank">
+                    19丨深入理解迭代器和生成器</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/20丨揭秘 Python 协程.html" target="_blank">
+                    20丨揭秘 Python 协程</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/21丨Python并发编程之Futures.html"
+                    target="_blank">21丨Python并发编程之Futures</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/22丨并发编程之Asyncio.html" target="_blank">
+                    22丨并发编程之Asyncio</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/23丨你真的懂Python GIL（全局解释器锁）吗？.html"
+                    target="_blank">23丨你真的懂Python GIL（全局解释器锁）吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/24丨带你解析 Python 垃圾回收机制.html"
+                    target="_blank">24丨带你解析 Python 垃圾回收机制</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/03-进阶篇 (6讲)/25丨答疑（二）：GIL与多线程是什么关系呢？.html"
+                    target="_blank">25丨答疑（二）：GIL与多线程是什么关系呢？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/26丨[名师分享] 活都来不及干了，还有空注意代码风格？！.html"
+                    target="_blank">26丨[名师分享] 活都来不及干了，还有空注意代码风格？！</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/27丨学会合理分解代码，提高代码可读性.html"
+                    target="_blank">27丨学会合理分解代码，提高代码可读性</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/28丨如何合理利用assert？.html" target="_blank">
+                    28丨如何合理利用assert？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/29丨巧用上下文管理器和With语句精简代码.html"
+                    target="_blank">29丨巧用上下文管理器和With语句精简代码</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/30丨真的有必要写单元测试吗？.html" target="_blank">
+                    30丨真的有必要写单元测试吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/31丨pdb&cProfile：调试和性能分析的法宝.html"
+                    target="_blank">31丨pdb&cProfile：调试和性能分析的法宝</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/04-规范篇 (1讲)/32丨答疑（三）：如何选择合适的异常处理方式？.html"
+                    target="_blank">32丨答疑（三）：如何选择合适的异常处理方式？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/33丨带你初探量化世界.html" target="_blank">
+                    33丨带你初探量化世界</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/34丨RESTful&Socket搭建交易执行层核心.html"
+                    target="_blank">34丨RESTful&Socket搭建交易执行层核心</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/35丨RESTful&Socket行情数据对接和抓取.html"
+                    target="_blank">35丨RESTful&Socket行情数据对接和抓取</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/36 丨 Pandas & Numpy 策略与回测系统.html"
+                    target="_blank">36 丨 Pandas & Numpy 策略与回测系统</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/37 丨 Kafka & ZMQ：自动化交易流水线.html"
+                    target="_blank">37 丨 Kafka & ZMQ：自动化交易流水线</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/38 丨 MySQL：日志和数据存储系统.html"
+                    target="_blank">38 丨 MySQL：日志和数据存储系统</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/39丨Django：搭建监控平台.html"
+                    target="_blank">39丨Django：搭建监控平台</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/05-量化交易实战篇 (8讲)/40丨总结：Python中的数据结构与算法全景.html"
+                    target="_blank">40丨总结：Python中的数据结构与算法全景</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/41丨硅谷一线互联网公司的工作体验.html"
+                    target="_blank">41丨硅谷一线互联网公司的工作体验</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/42丨细数技术研发的注意事项.html"
+                    target="_blank">42丨细数技术研发的注意事项</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/43丨Q&A：聊一聊职业发展和选择.html"
+                    target="_blank">43丨Q&A：聊一聊职业发展和选择</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/06-技术见闻与分享 (4讲)/加餐丨带你上手SWIG：一份清晰好用的SWIG编程实践指南.html"
+                    target="_blank">加餐丨带你上手SWIG：一份清晰好用的SWIG编程实践指南</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./32-Python核心技术与实战（完结）/07-结束语/结束语丨技术之外的几点成长建议.html" target="_blank">
+                    结束语丨技术之外的几点成长建议</el-link>
+            </el-col>
+        </el-row>
+    </div>
 </body>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+        }
+    })
+</script>
+
 </html>

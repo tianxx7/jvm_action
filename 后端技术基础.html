@@ -1,58 +1,297 @@
 <!doctype html>
 <html>
+
 <head>
     <title>后端技术基础</title>
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <style>
-        a{
-            display: block;
+        .el-link.el-link--primary {
+            font-size: 3rem;
         }
     </style>
 </head>
+
 <body>
-<a href="./101-后端技术基础详解/00丨开篇词 (1讲)/00丨开篇词丨掌握软件开发技术的第一性原理.html">00丨开篇词丨掌握软件开发技术的第一性原理</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/01丨程序运行原理：程序是如何运行又是如何崩溃的？.html">01丨程序运行原理：程序是如何运行又是如何崩溃的？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/02丨数据结构原理：Hash表的时间复杂度为什么是O(1)？.html">02丨数据结构原理：Hash表的时间复杂度为什么是O(1)？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/03丨Java虚拟机原理：JVM为什么被称为机器（machine）？.html">03丨Java虚拟机原理：JVM为什么被称为机器（machine）？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/04丨网络编程原理：一个字符的互联网之旅.html">04丨网络编程原理：一个字符的互联网之旅</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/05丨文件系统原理：如何用1分钟遍历一个100TB的文件？.html">05丨文件系统原理：如何用1分钟遍历一个100TB的文件？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/06丨数据库原理：为什么PrepareStatement性能更好更安全？.html">06丨数据库原理：为什么PrepareStatement性能更好更安全？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/07丨编程语言原理：面向对象编程是编程的终极形态吗？.html">07丨编程语言原理：面向对象编程是编程的终极形态吗？</a>
-<a href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/答疑丨JavaWeb程序的运行时环境到底是怎样的？.html">答疑丨JavaWeb程序的运行时环境到底是怎样的？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/08丨软件设计的方法论：软件为什么要建模？.html">08丨软件设计的方法论：软件为什么要建模？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/09丨软件设计实践：如何使用UML完成一个设计文档？.html">09丨软件设计实践：如何使用UML完成一个设计文档？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/10丨软件设计的目的：糟糕的程序员比优秀的程序员差在哪里？.html">10丨软件设计的目的：糟糕的程序员比优秀的程序员差在哪里？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/11丨软件设计的开闭原则：如何不修改代码却能实现需求变更？.html">11丨软件设计的开闭原则：如何不修改代码却能实现需求变更？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/12丨软件设计的依赖倒置原则：如何不依赖代码却可以复用它的功能？.html">12丨软件设计的依赖倒置原则：如何不依赖代码却可以复用它的功能？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/13丨软件设计的里氏替换原则：正方形可以继承长方形吗？.html">13丨软件设计的里氏替换原则：正方形可以继承长方形吗？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/14丨软件设计的单一职责原则：为什么说一个类文件打开最好不要超过一屏？.html">14丨软件设计的单一职责原则：为什么说一个类文件打开最好不要超过一屏？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/15丨软件设计的接口隔离原则：如何对类的调用者隐藏类的公有方法？.html">15丨软件设计的接口隔离原则：如何对类的调用者隐藏类的公有方法？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/16丨设计模式基础：不会灵活应用设计模式，你就没有掌握面向对象编程.html">16丨设计模式基础：不会灵活应用设计模式，你就没有掌握面向对象编程</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/17丨设计模式应用：编程框架中的设计模式.html">17丨设计模式应用：编程框架中的设计模式</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/18丨反应式编程框架设计：如何使程序调用不阻塞等待，立即响应？.html">18丨反应式编程框架设计：如何使程序调用不阻塞等待，立即响应？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/19丨组件设计原则：组件的边界在哪里？.html">19丨组件设计原则：组件的边界在哪里？</a>
-<a href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/20丨领域驱动设计：35岁的程序员应该写什么样的代码？.html">20丨领域驱动设计：35岁的程序员应该写什么样的代码？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/21丨分布式架构：如何应对高并发的用户请求.html">21丨分布式架构：如何应对高并发的用户请求</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/22丨缓存架构：如何减少不必要的计算？.html">22丨缓存架构：如何减少不必要的计算？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/23丨 异步架构：如何避免互相依赖的系统间耦合？.html">23丨 异步架构：如何避免互相依赖的系统间耦合？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/24丨 负载均衡架构：如何用10行代码实现一个负载均衡服务？.html">24丨 负载均衡架构：如何用10行代码实现一个负载均衡服务？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/25丨 数据存储架构：如何改善系统的数据存储能力？.html">25丨 数据存储架构：如何改善系统的数据存储能力？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/26丨 搜索引擎架构：如何瞬间完成海量数据检索？.html">26丨 搜索引擎架构：如何瞬间完成海量数据检索？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/27丨 微服务架构：微服务究竟是灵丹还是毒药？.html">27丨 微服务架构：微服务究竟是灵丹还是毒药？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/28丨 高性能架构：除了代码，你还可以在哪些地方优化性能？.html">28丨 高性能架构：除了代码，你还可以在哪些地方优化性能？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/29丨 高可用架构：我们为什么感觉不到淘宝应用升级时的停机？.html">29丨 高可用架构：我们为什么感觉不到淘宝应用升级时的停机？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/30丨 安全性架构：为什么说用户密码泄漏是程序员的锅？.html">30丨 安全性架构：为什么说用户密码泄漏是程序员的锅？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/31丨大数据架构：大数据技术架构的思想和原理是什么？.html">31丨大数据架构：大数据技术架构的思想和原理是什么？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/32丨AI与物联网架构：从智能引擎到物联网平台.html">32丨AI与物联网架构：从智能引擎到物联网平台</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/33丨区块链技术架构：区块链到底能做什么？.html">33丨区块链技术架构：区块链到底能做什么？</a>
-<a href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/答疑丨互联网需要解决的技术问题是什么？.html">答疑丨互联网需要解决的技术问题是什么？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/34丨技术修炼之道：同样工作十几年，为什么有的人成为大厂架构师，有的人失业？.html">34丨技术修炼之道：同样工作十几年，为什么有的人成为大厂架构师，有的人失业？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/35丨技术进阶之道：你和这个星球最顶级的程序员差几个等级？.html">35丨技术进阶之道：你和这个星球最顶级的程序员差几个等级？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/36丨技术落地之道：你真的知道自己要解决的问题是什么吗？.html">36丨技术落地之道：你真的知道自己要解决的问题是什么吗？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/37丨技术沟通之道：如何解决问题？.html">37丨技术沟通之道：如何解决问题？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/38丨技术管理之道：你真的要转管理吗？.html">38丨技术管理之道：你真的要转管理吗？</a>
-<a href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/答疑4丨工作中的交往和沟通，都有哪些小技巧呢？.html">答疑4丨工作中的交往和沟通，都有哪些小技巧呢？</a>
-<a href="./101-后端技术基础详解/05丨不定期加餐 (1讲)/加餐丨软件设计文档示例模板.html">加餐丨软件设计文档示例模板</a>
-<a href="./101-后端技术基础详解/06丨结束语 (1讲)/结束语丨期待未来的你，成为优秀的软件架构师.html">结束语丨期待未来的你，成为优秀的软件架构师</a>
+    <div id="app">
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/00丨开篇词 (1讲)/00丨开篇词丨掌握软件开发技术的第一性原理.html" target="_blank">
+                    00丨开篇词丨掌握软件开发技术的第一性原理</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/01丨程序运行原理：程序是如何运行又是如何崩溃的？.html"
+                    target="_blank">01丨程序运行原理：程序是如何运行又是如何崩溃的？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/02丨数据结构原理：Hash表的时间复杂度为什么是O(1)？.html"
+                    target="_blank">02丨数据结构原理：Hash表的时间复杂度为什么是O(1)？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/03丨Java虚拟机原理：JVM为什么被称为机器（machine）？.html"
+                    target="_blank">03丨Java虚拟机原理：JVM为什么被称为机器（machine）？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/04丨网络编程原理：一个字符的互联网之旅.html" target="_blank">
+                    04丨网络编程原理：一个字符的互联网之旅</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/05丨文件系统原理：如何用1分钟遍历一个100TB的文件？.html"
+                    target="_blank">05丨文件系统原理：如何用1分钟遍历一个100TB的文件？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/06丨数据库原理：为什么PrepareStatement性能更好更安全？.html"
+                    target="_blank">06丨数据库原理：为什么PrepareStatement性能更好更安全？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/07丨编程语言原理：面向对象编程是编程的终极形态吗？.html"
+                    target="_blank">07丨编程语言原理：面向对象编程是编程的终极形态吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/01丨软件的基础原理 (8讲)/答疑丨JavaWeb程序的运行时环境到底是怎样的？.html"
+                    target="_blank">答疑丨JavaWeb程序的运行时环境到底是怎样的？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/08丨软件设计的方法论：软件为什么要建模？.html"
+                    target="_blank">08丨软件设计的方法论：软件为什么要建模？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/09丨软件设计实践：如何使用UML完成一个设计文档？.html"
+                    target="_blank">09丨软件设计实践：如何使用UML完成一个设计文档？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/10丨软件设计的目的：糟糕的程序员比优秀的程序员差在哪里？.html"
+                    target="_blank">10丨软件设计的目的：糟糕的程序员比优秀的程序员差在哪里？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/11丨软件设计的开闭原则：如何不修改代码却能实现需求变更？.html"
+                    target="_blank">11丨软件设计的开闭原则：如何不修改代码却能实现需求变更？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/12丨软件设计的依赖倒置原则：如何不依赖代码却可以复用它的功能？.html"
+                    target="_blank">12丨软件设计的依赖倒置原则：如何不依赖代码却可以复用它的功能？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/13丨软件设计的里氏替换原则：正方形可以继承长方形吗？.html"
+                    target="_blank">13丨软件设计的里氏替换原则：正方形可以继承长方形吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/14丨软件设计的单一职责原则：为什么说一个类文件打开最好不要超过一屏？.html"
+                    target="_blank">14丨软件设计的单一职责原则：为什么说一个类文件打开最好不要超过一屏？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/15丨软件设计的接口隔离原则：如何对类的调用者隐藏类的公有方法？.html"
+                    target="_blank">15丨软件设计的接口隔离原则：如何对类的调用者隐藏类的公有方法？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/16丨设计模式基础：不会灵活应用设计模式，你就没有掌握面向对象编程.html"
+                    target="_blank">16丨设计模式基础：不会灵活应用设计模式，你就没有掌握面向对象编程</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/17丨设计模式应用：编程框架中的设计模式.html"
+                    target="_blank">17丨设计模式应用：编程框架中的设计模式</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/18丨反应式编程框架设计：如何使程序调用不阻塞等待，立即响应？.html"
+                    target="_blank">18丨反应式编程框架设计：如何使程序调用不阻塞等待，立即响应？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/19丨组件设计原则：组件的边界在哪里？.html" target="_blank">
+                    19丨组件设计原则：组件的边界在哪里？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/02丨软件的设计原理 (14讲)/20丨领域驱动设计：35岁的程序员应该写什么样的代码？.html"
+                    target="_blank">20丨领域驱动设计：35岁的程序员应该写什么样的代码？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/21丨分布式架构：如何应对高并发的用户请求.html"
+                    target="_blank">21丨分布式架构：如何应对高并发的用户请求</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/22丨缓存架构：如何减少不必要的计算？.html" target="_blank">
+                    22丨缓存架构：如何减少不必要的计算？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/23丨 异步架构：如何避免互相依赖的系统间耦合？.html"
+                    target="_blank">23丨 异步架构：如何避免互相依赖的系统间耦合？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/24丨 负载均衡架构：如何用10行代码实现一个负载均衡服务？.html"
+                    target="_blank">24丨 负载均衡架构：如何用10行代码实现一个负载均衡服务？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/25丨 数据存储架构：如何改善系统的数据存储能力？.html"
+                    target="_blank">25丨 数据存储架构：如何改善系统的数据存储能力？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/26丨 搜索引擎架构：如何瞬间完成海量数据检索？.html"
+                    target="_blank">26丨 搜索引擎架构：如何瞬间完成海量数据检索？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/27丨 微服务架构：微服务究竟是灵丹还是毒药？.html"
+                    target="_blank">27丨 微服务架构：微服务究竟是灵丹还是毒药？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/28丨 高性能架构：除了代码，你还可以在哪些地方优化性能？.html"
+                    target="_blank">28丨 高性能架构：除了代码，你还可以在哪些地方优化性能？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/29丨 高可用架构：我们为什么感觉不到淘宝应用升级时的停机？.html"
+                    target="_blank">29丨 高可用架构：我们为什么感觉不到淘宝应用升级时的停机？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/30丨 安全性架构：为什么说用户密码泄漏是程序员的锅？.html"
+                    target="_blank">30丨 安全性架构：为什么说用户密码泄漏是程序员的锅？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/31丨大数据架构：大数据技术架构的思想和原理是什么？.html"
+                    target="_blank">31丨大数据架构：大数据技术架构的思想和原理是什么？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/32丨AI与物联网架构：从智能引擎到物联网平台.html"
+                    target="_blank">32丨AI与物联网架构：从智能引擎到物联网平台</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/33丨区块链技术架构：区块链到底能做什么？.html"
+                    target="_blank">33丨区块链技术架构：区块链到底能做什么？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/03丨架构的核心原理 (14讲)/答疑丨互联网需要解决的技术问题是什么？.html" target="_blank">
+                    答疑丨互联网需要解决的技术问题是什么？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary"
+                    href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/34丨技术修炼之道：同样工作十几年，为什么有的人成为大厂架构师，有的人失业？.html" target="_blank">
+                    34丨技术修炼之道：同样工作十几年，为什么有的人成为大厂架构师，有的人失业？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/35丨技术进阶之道：你和这个星球最顶级的程序员差几个等级？.html"
+                    target="_blank">35丨技术进阶之道：你和这个星球最顶级的程序员差几个等级？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/36丨技术落地之道：你真的知道自己要解决的问题是什么吗？.html"
+                    target="_blank">36丨技术落地之道：你真的知道自己要解决的问题是什么吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/37丨技术沟通之道：如何解决问题？.html" target="_blank">
+                    37丨技术沟通之道：如何解决问题？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/38丨技术管理之道：你真的要转管理吗？.html" target="_blank">
+                    38丨技术管理之道：你真的要转管理吗？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/04丨技术人的思维修炼 (6讲)/答疑4丨工作中的交往和沟通，都有哪些小技巧呢？.html"
+                    target="_blank">答疑4丨工作中的交往和沟通，都有哪些小技巧呢？</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/05丨不定期加餐 (1讲)/加餐丨软件设计文档示例模板.html" target="_blank">
+                    加餐丨软件设计文档示例模板</el-link>
+            </el-col>
+        </el-row>
+        <el-row class="tac">
+            <el-col :span="24">
+                <el-link type="primary" href="./101-后端技术基础详解/06丨结束语 (1讲)/结束语丨期待未来的你，成为优秀的软件架构师.html" target="_blank">
+                    结束语丨期待未来的你，成为优秀的软件架构师</el-link>
+            </el-col>
+        </el-row>
+    </div>
 </body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+
+        }
+    })
+</script>
+
 </html>
